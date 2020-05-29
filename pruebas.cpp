@@ -48,7 +48,7 @@ void step1() {
     cout << a.at(1).name << endl;
 
     for (vector<items>::iterator it = a.begin(); it != a.end(); ++it) {
-        cout << "Elemento Nº" << (a.size() - (it - a.end())) << ":" << endl
+        cout << "Elemento Nº" << (a.size() - (a.end() - it)) << ":" << endl
             << "\tID: " << (*it).ID << endl
             << "\tDesctipción: " << (*it).desc << endl
             << "\tPrecio: " << (*it).price << endl
