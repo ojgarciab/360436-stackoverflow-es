@@ -1,0 +1,13 @@
+tasks:
+- name: Terminal
+  init: >
+    echo "Compilando la aplicación:";
+    make;
+    echo "Ejecutando la aplicación:";
+    echo 'pruebas.csv' | ./pruebas
+  command: >
+    echo "";
+    echo "Recuerda que pudes hacer:";
+    echo " * make";
+    echo " * make clean";
+    echo " * echo 'pruebas.csv' | ./pruebas"
